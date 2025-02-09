@@ -1,17 +1,13 @@
-var A = "I like movies";
-window.alert(A);
-var B = "I\'m cool" + " as a cucumber"
-document.write(B)
+var A = "I like movies";//Adds a variable
+window.alert(A);//Causes an Alert to pop up
+var B = "I\'m cool" + " as a cucumber"// Concatenates 2 variables
+document.write(B)//Calls for B to be written
 var Sport = "Hockey", TeamA = " Avalanche ", TeamB = "Hurricanes", TeamC = "Lightning";
 document.write(TeamA);
-document.write(3 + 3);
+document.write(3 + 3);//Performs a mathenmatical function
 
-function displayDate() {
-    document.getElementById("Button_Date").innerHTML = Date();
-}
-
-function myFunction() {
+function myFunction() {//Creates a function
     var sentence =  "I like ";
     sentence += "Hockey";
-    document.getElementById("Concatenate").innerHTML = sentence;
+    document.getElementById("Concatenate").innerHTML = sentence;//Adjust the HTML code
 }
