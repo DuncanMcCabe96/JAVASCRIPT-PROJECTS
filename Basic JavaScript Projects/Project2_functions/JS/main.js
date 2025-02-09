@@ -6,7 +6,12 @@ var Sport = "Hockey", TeamA = " Avalanche ", TeamB = "Hurricanes", TeamC = "Ligh
 document.write(TeamA);
 document.write(3 + 3);
 
-function My_First_Function(){ 
-    var str = "This is the button text"; //What the button will display when clciked
-    document.getElementById("Button_Text").innerHTML = str;
+function displayDate() {
+    document.getElementById("Button_Date").innerHTML = Date();
+}
+
+function myFunction() {
+    var sentence =  "I like ";
+    sentence += "Hockey";
+    document.getElementById("Concatenate").innerHTML = sentence;
 }
