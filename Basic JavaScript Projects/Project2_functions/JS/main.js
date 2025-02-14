@@ -11,3 +11,7 @@ function myFunction() {//Creates a function
     sentence += "Hockey";
     document.getElementById("Concatenate").innerHTML = sentence;//Adjust the HTML code
 }
+
+function add(p1, p2){
+    return p1*p2;
+}
