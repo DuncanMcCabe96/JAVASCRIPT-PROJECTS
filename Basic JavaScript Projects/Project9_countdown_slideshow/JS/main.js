@@ -10,6 +10,7 @@ function countdown(){
             timer.innerHTML = "";
             }
         }
+    tick();
 }
 
 let slideIndex = 1;
