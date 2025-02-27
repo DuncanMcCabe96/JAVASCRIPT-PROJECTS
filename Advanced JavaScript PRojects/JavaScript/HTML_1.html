@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script src="JavaScript/JavaScript_1.js" defer></script>
+        <style>
+            /* Add a border to the canvas */
+            #myCanvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>What is your favorite car</h1>
+        <h3>Click on the car you like the most</h3>
+        <ul>
+            <li>Corvette</li>
+            <li>Mustang</li>
+            <li>Challenger</li>
+            <li>Camero</li>
+            <li>Charger</li>
+            <li>Skyline</li>
+        </ul>
+        <h3>Enter your choice below</h3>
+
+        <input id="Car_input" type="text">
+        <button onclick="Car_function()">Submit Car</button> 
+        <p id="Car_output"></p>
+
+        <h1 class="Click">This text will change</h1>
+        <h3 class="Click">This text will not change</h3>
+        <button onclick="Hello_World_Function()">Click Here</button>
+
+        <!-- Add the canvas element under the button -->
+        <button onclick="toggleCanvas()">Toggle Canvas</button>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+    </body>
+</html>
