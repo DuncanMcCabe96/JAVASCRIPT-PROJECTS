@@ -1,0 +1,104 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+/* Select all elements, their ::before and ::after pseudo-elements */
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+
+    /* Set box-sizing to 'inherit' for all elements and pseudo-elements. This makes sure 
+       that the element's padding and border are included in its total width and height. */
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray;
+
+
+    /*Round the corners*/
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* Use the transform property to move the calculator back by 50% of its own width and height, 
+       effectively centering it in the viewport. The space between "translate" and the values should be removed for it to work correctly */
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.6));
+    text-shadow: 0 1px rgba(255, 255, 255, .05),
+
+        /*Each value below is separated by a comma ',' after the rgba values*/
+        inset 0 1px rgba(255, 255, 255, .05),
+        inset 0 -1px rgba(255, 255, 255, .05),
+        0 1px 0 rgba(255, 255, 255, .05);
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-color: lightgray;
+}
+
+.all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: #ffffff;
+}
+
+.equal-sign {
+    background-color: blue;
+    border-color: darkslategray;
+    color: #ffffff;
+    height: 100%;
+
+    /*This property is used to define where an item will be placed in a CSS grid layout. It is a shorthand that allows you to specify the starting row, starting column, ending row, and ending column of a grid item.*/
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+.calculator-keys {
+    /*Use CSS grid to lay out the keys in a grid format*/
+    display: grid;
+
+    /*Create a grid with 4 equal-width columns (1fr means 1 franction of available space)*/
+    grid-template-columns: repeat(4,1fr);
+
+    /*Add a gap of 20px between the rows and columns in the grid*/
+    grid-gap: 20px;
+    padding: 20px;
+}
+ 
